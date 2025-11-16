@@ -39,6 +39,9 @@ Game link: https://orsonik.itch.io/scav-prototype
     - - But you should create a Wine profile for it to be permanent.
 
 7. In main menu, multiplayer related buttons should appear on top left corner of the screen.
+    - LINUX WINE ONLY:
+    - - If you can't see text you need to install wine fonts.
+    - - Download a random Arial.ttf off of the internet or use any popular font installer.
 
 8. Continue to "How to play" sections of this README.
  
