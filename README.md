@@ -11,14 +11,32 @@ Game link: https://orsonik.itch.io/scav-prototype
 2. You have to copy the game again if you want to play singleplayer later.
 
 3. Unzip BepInEx_win_x64_5.4.23.3.zip into the game root directory (where the .exe is located).
-    - Official download: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip   
+    - Official download: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip
+
 4. Go to CasualtiesUnknown/BepInEx/plugins/ 
-5. Copy and paste all dlls from "plugins" into there.
-    - KrokoshaCasualtiesMP.dll
-    - Unity.Netcode.Runtime.dll
-    - Unity.Netcode.Components.dll
-    - Unity.Networking.Transport.dll
+5. Copy and paste all dlls from "BepInEx/plugins/" into there.
+
+ - **Now your game root folder should look like this:**
+ - -  CasualtiesUnknown/
+ - - - CasualtiesUnknown.exe
+ - - - UnityPlayer.dll
+ - - - UnityCrashHandler64.exe
+ - - - CasualtiesUnknown_Data/
+ - - - MonoBleedingEdge/
+ - - - winhttp.dll
+ - - - BepInEx/
+ - - - - plugins/
+ - - - - - KrokoshaCasualtiesMP.dll
+ - - - - - Unity.Netcode.Runtime.dll
+ - - - - - Unity.Netcode.Components.dll
+ - - - - - Unity.Networking.Transport.dll
+ - - - - config/
+
 6. Try to launch the game by double clicking the CasualtiesUnknown.exe.
+    - LINUX WINE ONLY:
+    - - For Linux Wine you need to enable dll override for winhttp !!
+    - - cmd: `WINEDLLOVERRIDES="winhttp=n,b" wine CasualtiesUnknown.exe` 
+    - - But you should create a Wine profile for it to be permanent.
 
 7. In main menu, multiplayer related buttons should appear on top left corner of the screen.
 
@@ -33,7 +51,7 @@ Lookup any Minecraft vLAN/LAN/Port-forwarding tutorial, it will work the same.<b
 (except that my mod doesn't scan your Local Network lol, you need to always input an IP address)<br>
 (and also this mod uses UDP protocol instead of TCP)<br>
 
-known good vLAN software: Radmin VPN, ZeroTier, Hamachi 
+known good vLAN software: ZeroTier, Radmin VPN, Hamachi 
 
 
 (i will only cover Hamachi side of things, same applies to other vLAN software)
@@ -148,6 +166,7 @@ Run "krok rule sv_cheats true" to enable console 'cheat' commands<br>
 With friendly fire enabled, other players do a scared face if you aim your gun at them.<br>
 
 Traders first impression reputation is calculated from the prettiest of the bunch.<br>
+
 
 
 
