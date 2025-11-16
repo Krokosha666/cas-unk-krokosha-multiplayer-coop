@@ -16,6 +16,12 @@ This mod entirely consists of zero-effort schizo code written on a phone, it's a
 
 
 
+ --- 5.4.1.9 --- 16.11.2025 --- Public release Hotfix --- 
+Added disconnection messages.
+Fixed bug that caused all players clear inventory when continuing to next layer.
+Host now requires a name. To fix potentially broken chat and allat.
+
+
  --- 5.4.1.8 --- 16.11.2025 --- Co-op Minigames update --- 
 Hopefully fixed some inventory desyncs.
 Fixed wrong melee friendly fire negative damage calculation.
