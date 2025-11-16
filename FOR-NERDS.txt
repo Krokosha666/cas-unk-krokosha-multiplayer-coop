@@ -1,0 +1,57 @@
+"Casualties: Unknown" Co-op mod by Krokosha666
+(my abandoned YT channel): https://www.youtube.com/@Krokosha666
+
+# Port Forwarding:
+This mod uses UDP protocol.
+Default port: 7790 
+
+# Console commands:
+This mod adds mutliplayer-exclusive console commands.
+
+Write "krok help" into the console to see them all.
+
+"krok rule sv_cheats 1" to enable all commands (server-only)
+"krok rule AllowClientCheatCommands 1" to enable all commands for clients (none of them are synced, only tp works)
+"krok maxplayers [number]" (default is 8)
+
+"krok rules" to see game rules
+"krok rule [rule name] [value]" is for:
+	- enable permadeath
+	- re-enable changing time speed 
+	- re-enable sleeping 
+	- and much more things for people to tweak the game into a better experience 
+"krok kick [name]" to forcibly disconnect a player
+also some commands that require player name as input can accept macros: 
+ - "@m" (local player)  
+ - "@a" (everyone)
+ - "@r" (random)
+ - "@c" (anyone at your cursor location (if theres no one it will fail) )
+ - so you can do "krok heal @a" - which heals everyone
+ - or you can do "krok heal @c" - which heals someone at your cursor 
+
+
+# Keybinds:
+"krokosha_coop_pointfingerat" default: Mouse2
+"krokosha_coop_voice_chat" default: V
+"krokosha_coop_chat" default: Slash
+
+Are added to the "keybinds.json" automatically.
+
+
+# Available startup os command arguments:  
+--ksmulti-immidiate-start	// start the world as soon as the game initializes 
+--ksmulti-setstarttutorial  // requires immidiate start, makes the world start in tutorial
+--ksmulti-verbose			// logs more info about synchronization (useful for reporing bugs)
+--ksmulti-ip-port 127.0.0.1:7790   // override ip and port
+--ksmulti-setname My_Custom_User_Name  // override username
+--ksmulti-sethost			// set network system into host mode
+--ksmulti-setclient			// DEFAULT, set network system into client mode
+--ksmulti-startnetwork		// start the network system as soon as the game initializes (if host, it starts the server with specified port, if client, it tries to connect to the ip)
+--ksmulti-setrule [rule] [value] // set a game rule before start, in in-game console enter "krok rules" to see them all
+
+EXAMPLE: "CasualtiesUnknown.exe --ksmulti-ip-port 127.0.0.1:25565 --ksmulti-setrule sv_cheats 1 --ksmulti-setrule PLAYER_COUNT_LIMIT 20 --ksmulti-setname MyNameJeff --ksmulti-sethost --ksmulti-startnetwork --ksmulti-immidiate-start"
+
+btw, this mod does not support running as headless/dedicated servers because of how the game is built, and the mod (simply not possible)
+
+# This mod uses "Unity Netcode for GameObjects" library version 1.7.1   
+

@@ -1,0 +1,55 @@
+"Casualties: Unknown" Co-op mod by Krokosha666
+(my abandoned YT channel): https://www.youtube.com/@Krokosha666
+
+
+KNOWN ISSUES:
+Save system does not work.
+Extreme lag for clients.
+Extreme lag with larger time scale.
+Optimization doesn't really exist rn, actually.
+Gun jamming might desync
+Worldgen is not synced at all. But my object sync streams the world to the clients pretty accurately.
+Physics sync is wrong outside of hosts view.
+Ragdoll just teleports around i know.
+Sometimes world generation screen on host might freeze for like a minute and idk whyy
+This mod entirely consists of zero-effort schizo code written on a phone, it's a miracle that it works.
+
+
+
+ --- 5.4.1.8 --- 16.11.2025 --- Co-op Minigames update --- 
+Hopefully fixed some inventory desyncs.
+Fixed wrong melee friendly fire negative damage calculation.
+Added melee friendly fire knockback and brain damage.
+Character now cries when attacking a dying player.
+Fixed a couple NullReference exceptions in object destruction handling.
+Remade Minigame sync: Shrapnel, Dislocation, Keypad, Lockpicking - hands of other player are now visible.
+Crafting system sync - fixed favourited items for clients.
+Fixed syringe minigame not injecting correct amount.
+Attempted to implement some optimizations.
+Ping counter now shows actually correct ping.
+Improved loading screen to be uiScale dependent.
+Fixed layer modifiers not being reset.
+Improved nametag placement.
+Fixed player spawn location, now it properly spawns new players at location of any living player.
+Better player disconnect handling.
+Fixed late join handling (joining while the game is in progress doesnt completely break the game as often anymore)
+Synced Radiation Line gamemode.
+Fixed trader desyncs caused by host interactions.
+When viewing health panel of a dead player the red alert now says "DECEASED".
+Fixed health opiate effects state sync.
+Fixed friendly fire shotgun not dealing correct amount of damage. (now its very deadly)
+Fixed random lifepod buttons not syncing.
+
+
+ --- 5.4.1.7 --- 09.11.2025 --- Private build for Orsoniks --- 
+Added watermarks.
+Increased physics sync rate in players close proximity.
+New system for melee and gun sync.
+Added friendly fire.
+
+
+ --- 5.4.1.6 --- 20.10.2025 --- Testing --- 
+Trader sync.
+I think most of the features are synced in some capacity.
+
+
