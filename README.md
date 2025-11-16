@@ -143,11 +143,12 @@ Player health regen and decay is tweaked.
  - Health regeneration is boosted. (tweaked by the "AdditionalHealthRegen" rule )
 
 All these rules can be changed only by the Host by running the command "krok rule [rule name] [new value]"   <br>
-"Cheat" console commands are completely disabled, and can be enabled with a console command "krok rule sv_cheats true"<br>
+Run "krok rule sv_cheats true" to enable console 'cheat' commands<br>
 
 With friendly fire enabled, other players do a scared face if you aim your gun at them.<br>
 
 Traders first impression reputation is calculated from the prettiest of the bunch.<br>
+
 
 
 
