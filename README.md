@@ -45,7 +45,7 @@ Game link: https://orsonik.itch.io/scav-prototype
 8. In main menu, multiplayer related buttons should appear on top left corner of the screen.
     - LINUX WINE ONLY:
     - - If you can't see text you need to install wine fonts.
-    - - Download a random Arial.ttf off of the internet or use any popular font installer.
+    - - Download a random Arial.ttf off of the internet or run `winetricks allfonts`.
 
 9. Continue to "How to play" sections of this README.
  
@@ -183,6 +183,7 @@ Enter this console command:<br>
 ```krok rule sv_cheats 1```<br>
 and then to allow clients to cheat:<br>
 ```krok rule AllowClientCheatCommands 1```<br>
+
 
 
 
