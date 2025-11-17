@@ -12,7 +12,7 @@ Write "krok help" into the console to see them all.
 
 "krok rule sv_cheats 1" to enable all commands (server-only)
 "krok rule AllowClientCheatCommands 1" to enable all commands for clients (none of them are synced, only tp works)
-"krok maxplayers [number]" (default is 8)
+"krok maxplayers [number]" (default is 20)
 
 "krok rules" to see game rules
 "krok rule [rule name] [value]" is for:
@@ -20,19 +20,21 @@ Write "krok help" into the console to see them all.
 	- re-enable changing time speed 
 	- re-enable sleeping 
 	- and much more things for people to tweak the game into a better experience 
+	- at the end of the file all rules are explained 
 "krok kick [name]" to forcibly disconnect a player
 also some commands that require player name as input can accept macros: 
  - "@m" (local player)  
  - "@a" (everyone)
  - "@r" (random)
- - "@c" (anyone at your cursor location (if theres no one it will fail) )
+ - "@c" (anyone at your cursor location (or the nearest player) )
  - so you can do "krok heal @a" - which heals everyone
  - or you can do "krok heal @c" - which heals someone at your cursor 
+
+"krok give" command is more advanced way to spawn items. it automatically loads any guns or magazines.
 
 
 # Keybinds:
 "krokosha_coop_pointfingerat" default: Mouse2
-"krokosha_coop_voice_chat" default: V
 "krokosha_coop_chat" default: Slash
 
 Are added to the "keybinds.json" automatically.
@@ -54,4 +56,30 @@ EXAMPLE: "CasualtiesUnknown.exe --ksmulti-ip-port 127.0.0.1:25565 --ksmulti-setr
 btw, this mod does not support running as headless/dedicated servers because of how the game is built, and the mod (simply not possible)
 
 # This mod uses "Unity Netcode for GameObjects" library version 1.7.1   
+
+
+
+
+
+# All game rules:
+
+bool sv_cheats = false; // allow running all console commands for the host
+bool AllowClientCheatCommands = false; // allow running all console commands for all clients (none of them are synced btw)
+ushort PLAYER_COUNT_LIMIT = 20;  
+bool EnableNametags = true; // Shows names of players under their characters 
+bool DisableNametagsIfUnchipped = true; 
+bool UnchippedIsIndividual = true;  // in pre-run settings, everyone can choose on their own to be chipped or no. if this is "false", everyone is same as host
+bool ForNextLayerAllMustReachEnd = true; // player that finishes a layer must wait for everyone else, else , host will get prompted to continue layer even if they are very far behind
+bool CanAccessOthersInventory = false;  // and steal stuff from other inventory even when theyre conscious
+bool DisableSleep = true; // energy is always forced 100%
+bool DisableTimeManipulation = true;  // kinda broken, allows time manipulation (of course its synchronized but i find it too chaotic to let everyone spam fast forward + the game also auto winds time in specific scenarios so its completely broken)
+bool SpeechImpairedTextChat = true; // applies same distortions to text as default talker from current health.  and also disable text chat if mindwiped in UPDATE1 (but can still see )
+bool CommunicateWithTheDead = true; // text chat and voice chat are not separated from dead (forced true in tutorial)
+bool Permadeath = false; // disable all forms of non-cheat respawn
+bool ReviveOnNextLevel = true; // respawn all dead players after reaching next layer
+bool FriendlyFire = false;
+bool AllowJoinWhileInGame = false; // potentially unstable but i think it works now 
+float AdditionalHealthRegen = 1.0; // speed up regen for broken bones, dislocations and stuff like that (because the intended way to play this mod is without speeding up time) 
+float AdditionalHealthDecay = 1.0; // speeds up brain damage from lack of oxygen, so that death isnt so slow  
+
 
