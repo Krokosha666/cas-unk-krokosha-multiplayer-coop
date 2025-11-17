@@ -10,11 +10,15 @@ Game link: https://orsonik.itch.io/scav-prototype
 
 2. You have to copy the game again if you want to play singleplayer later.
 
-3. Unzip BepInEx_win_x64_5.4.23.3.zip into the game root directory (where the .exe is located).
+3. Download the mod and unzip the contents into the game root directory.
+    - Click the "Code > Download Zip"
+    - Or heres direct link: https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/archive/refs/heads/main.zip
+
+4. Unzip BepInEx_win_x64_5.4.23.3.zip into the game root directory (where the .exe is located).
     - Official download: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip
 
-4. Go to CasualtiesUnknown/BepInEx/plugins/ 
-5. Copy and paste all dlls from "BepInEx/plugins/" into there.
+5. Go to CasualtiesUnknown/BepInEx/plugins/   (create the plugins folder if its missing)
+6. Copy and paste all dlls from "MultiplayerMod/BepInEx/plugins/" into there.
 
  - **Now your game root folder should look like this:**
  - -  CasualtiesUnknown/
@@ -30,20 +34,20 @@ Game link: https://orsonik.itch.io/scav-prototype
  - - - - - Unity.Netcode.Runtime.dll
  - - - - - Unity.Netcode.Components.dll
  - - - - - Unity.Networking.Transport.dll
- - - - - config/
+ - - - - core/
 
-6. Try to launch the game by double clicking the CasualtiesUnknown.exe.
+7. Try to launch the game by double clicking the CasualtiesUnknown.exe.
     - LINUX WINE ONLY:
     - - For Linux Wine you need to enable dll override for winhttp !!
     - - cmd: `WINEDLLOVERRIDES="winhttp=n,b" wine CasualtiesUnknown.exe` 
     - - But you should create a Wine profile for it to be permanent.
 
-7. In main menu, multiplayer related buttons should appear on top left corner of the screen.
+8. In main menu, multiplayer related buttons should appear on top left corner of the screen.
     - LINUX WINE ONLY:
     - - If you can't see text you need to install wine fonts.
-    - - Download a random Arial.ttf off of the internet or run `winetricks allfonts`
+    - - Download a random Arial.ttf off of the internet or use any popular font installer.
 
-8. Continue to "How to play" sections of this README.
+9. Continue to "How to play" sections of this README.
  
 
 
@@ -91,7 +95,7 @@ known good vLAN software: ZeroTier, Radmin VPN, Hamachi
 # Warning:
 If nothing works: It's a skill issue - Don't whine and try again.
  - You can look up online any troubleshooting tutorials for any LAN game, same network issues apply to ALL software in the world.
- - Or better yet, go ask an AI about it. It WILL help you with troubleshooting your network issues. (im serious)
+ - Or better yet, go ask an AI about it. It's pretty good at troubleshooting network issues.
 
 Also, restart the game after disconnect or failed attempt, to reset for sure.
 
@@ -117,6 +121,7 @@ More true co-op features are coming soon!<br>
 
 # Features for nerds:
 Added MP-specific console commands. (type "krok help" to show)<br>
+This mod uses Unity Netcode as the networking library.<br>
 Complete player and interactions synchronization.<br>
 All in-game POIs and Items are synchronized.<br>
 Simple world synchronization. (tiles and fluids)<br>
@@ -172,7 +177,12 @@ Traders first impression reputation is calculated from the prettiest of the bunc
 
 
 
+# How to enable cheats:
 
+Enter this console command:<br>
+```krok rule sv_cheats 1```<br>
+and then to allow clients to cheat:<br>
+```krok rule AllowClientCheatCommands 1```<br>
 
 
 
