@@ -179,10 +179,11 @@ Traders first impression reputation is calculated from the prettiest of the bunc
 
 # How to enable cheats:
 
-Enter this console command:<br>
+The Host must enter this console command:<br>
 ```krok rule sv_cheats 1```<br>
 and then to allow clients to cheat:<br>
 ```krok rule AllowClientCheatCommands 1```<br>
+
 
 
 
