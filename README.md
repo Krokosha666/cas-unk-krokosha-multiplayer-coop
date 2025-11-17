@@ -2,6 +2,7 @@
 (my abandoned YT channel): https://www.youtube.com/@Krokosha666<br>
 A simple LAN Multiplayer Co-op Mod for Scav Prototype V5 Pretest 4<br>
 Game link: https://orsonik.itch.io/scav-prototype
+Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
 
 
 # How to install:
@@ -96,6 +97,7 @@ known good vLAN software: ZeroTier, Radmin VPN, Hamachi
 If nothing works: It's a skill issue - Don't whine and try again.
  - You can look up online any troubleshooting tutorials for any LAN game, same network issues apply to ALL software in the world.
  - Or better yet, go ask an AI about it. It's pretty good at troubleshooting network issues.
+ - Or people at "Casualties: Together" discord server may help you: https://discord.gg/SA6H7mA6De
 
 Also, restart the game after disconnect or failed attempt, to reset for sure.
 
@@ -183,6 +185,7 @@ The Host must enter this console command:<br>
 ```krok rule sv_cheats 1```<br>
 and then to allow clients to cheat:<br>
 ```krok rule AllowClientCheatCommands 1```<br>
+
 
 
 
