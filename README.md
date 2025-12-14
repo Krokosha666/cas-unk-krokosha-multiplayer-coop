@@ -7,8 +7,13 @@ Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
 ### Gameplay showcase: 
 [![Video Title](https://img.youtube.com/vi/dvVuY3R9wV8/0.jpg)](https://www.youtube.com/watch?t=61&v=dvVuY3R9wV8)
 
+# Automatic install:
+1. **danxnader** created an automatic [installer tool](https://github.com/danxnader/ScavKRInstaller) for this mod:
+    - [Download the ScavKRInstaller.exe](https://github.com/danxnader/ScavKRInstaller/releases/latest/download/ScavKRInstaller.exe)
+    - Note: You can not play singleplayer with this version of the game.
+2. Follow the tool's instructions.<br>It should install the correct game version for the latest version of this mod.
 
-# How to install:
+# Manual install:
 1. Download the game from:
     - https://orsonik.itch.io/scav-prototype 
 
@@ -16,7 +21,7 @@ Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
 
 3. Download the mod and unzip the contents into the game root directory.
     - Click the "Code > Download Zip"
-    - Or heres direct link: https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/archive/refs/heads/main.zip
+    - Or here's direct link: https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/archive/refs/heads/main.zip
 
 4. Unzip BepInEx_win_x64_5.4.23.3.zip into the game root directory (where the .exe is located).
     - Official download: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip
@@ -62,45 +67,49 @@ Lookup any Minecraft vLAN/LAN/Port-forwarding tutorial, it will work the same.<b
 (except that my mod doesn't scan your Local Network lol, you need to always input an IP address)<br>
 (and also this mod uses UDP protocol instead of TCP)<br>
 
-known good vLAN software: ZeroTier, Radmin VPN, Hamachi 
+known good vLAN software: ZeroTier, Radmin VPN, Tailscale, Hamachi 
 
 
-(i will only cover Hamachi side of things, same applies to other vLAN software)
+(i will only cover Radmin VPN side of things, same applies to other vLAN software)<br>
+Install RadminVPN from https://www.radmin-vpn.com/
+
 
 ## How to host:
-1. Make sure Hamachi is setup correctly and you see your friends with green light.
-2. Run game and enter the Main Menu.
-3. IP doesn't matter, you can change PORT if you want to.
-4. Password is optional.
-5. Press the big "Start Host" button.
-6. If your OS Firewall prompts you about it, click "Allow".
-7. Wait for your friends to connect.
-8. Press "Start Run" or "Tutorial" button. Everyone should go into load screen and then spawn in the world.
-9. Now become casualties yall.
-10. (optional) Upvote and support the mod.
+1. Install Radmin VPN.
+2. Create Network, name it anything.
+3. Run game and enter the Main Menu.
+4. IP:PORT can stay default.
+5. Password is optional.
+6. Press the big "Start Host" button.
+7. If your OS Firewall prompts you about it, click "Allow".
+8. Wait for your friends to connect.
+9. Press "Start Run" or "Tutorial" button. Everyone should go into load screen and then spawn in the world.
+10. Now become casualties yall.
+11. (optional) Upvote and support the mod.
 
 
 ## How to join:
-1. Make sure Hamachi is setup correctly and you see your friends with green light.
-2. In Hamachi, right click on your Host and press "copy IP".
-3. Run game and enter the Main Menu.
-4. Ask Host for their password (if theres none, leave it empty).
-5. Ask Host for their PORT number.
-6. Paste IP and write PORT in the textbox, example:
+1. Install Radmin VPN.
+2. In Radmin VPN, join the Host's network.
+3. Right click on your Host and press "copy IP".
+4. Run game and enter the Main Menu.
+5. Ask Host for their password (if there's none, leave it empty).
+6. Ask Host for their PORT number.
+7. Paste IP and write PORT in the textbox, example:
     - Expected input - 192.168.0.10:7790
     - IP - 192.168.0.10
     - PORT - 7790
-    - Make sure theres colon inbetween them.
-7. Press the big "Client Connect" button.
+    - Make sure there's colon inbetween them.
+8. Press the big "Client Connect" button.
     - If it fails to connect make sure the game is whitelisted in your OS Firewall settings, and do other troubleshooting.
-8. (optional) Upvote and support the mod.
+9. (optional) Upvote and support the mod.
 
     
 # Warning:
 If nothing works: It's a skill issue - Don't whine and try again.
  - You can look up online any troubleshooting tutorials for any LAN game, same network issues apply to ALL software in the world.
  - Or better yet, go ask an AI about it. It's pretty good at troubleshooting network issues.
- - Or people at "Casualties: Together" discord server may help you: https://discord.gg/SA6H7mA6De
+ - Or crying at people in "Casualties: Together" discord server may help you: https://discord.gg/SA6H7mA6De
 
 Also, restart the game after disconnect or failed attempt, to reset for sure.
 
@@ -131,10 +140,10 @@ Complete player and interactions synchronization.<br>
 All in-game POIs and Items are synchronized.<br>
 Simple world synchronization. (tiles and fluids)<br>
 Janky physics synchronization.<br>
-Theres no client prediction.<br>
-Theres no network ownership.<br>
-Theres no deterministic RNG.<br>
-Theres no anticheat. <br>
+There's no client prediction.<br>
+There's no network ownership.<br>
+There's no deterministic RNG.<br>
+There's no anticheat. <br>
 This mod only adds a simple co-op experience to the game.<br>
 
 

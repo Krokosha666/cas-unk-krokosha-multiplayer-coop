@@ -1,4 +1,5 @@
 "Casualties: Unknown" Co-op mod by Krokosha666
+Official link: https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop
 (my abandoned YT channel): https://www.youtube.com/@Krokosha666
 
 # Port Forwarding:
@@ -74,7 +75,7 @@ bool CanAccessOthersInventory = false;  // and steal stuff from other inventory 
 bool DisableSleep = true; // energy is always forced 100%
 bool DisableTimeManipulation = true;  // kinda broken, allows time manipulation (of course its synchronized but i find it too chaotic to let everyone spam fast forward + the game also auto winds time in specific scenarios so its completely broken)
 bool SpeechImpairedTextChat = true; // applies same distortions to text as default talker from current health.  and also disable text chat if mindwiped in UPDATE1 (but can still see )
-bool CommunicateWithTheDead = true; // text chat and voice chat are not separated from dead (forced true in tutorial)
+bool CommunicateWithTheDead = true; // chat is separated from dead if false (forced true in tutorial)
 bool Permadeath = false; // disable all forms of non-cheat respawn
 bool ReviveOnNextLevel = true; // respawn all dead players after reaching next layer
 bool FriendlyFire = false;
