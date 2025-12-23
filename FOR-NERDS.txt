@@ -47,16 +47,20 @@ Are added to the "keybinds.json" automatically.
 --ksmulti-verbose			// logs more info about synchronization (useful for reporing bugs)
 --ksmulti-ip-port 127.0.0.1:7790   // override ip and port
 --ksmulti-setname My_Custom_User_Name  // override username
---ksmulti-sethost			// set network system into host mode
---ksmulti-setclient			// DEFAULT, set network system into client mode
---ksmulti-startnetwork		// start the network system as soon as the game initializes (if host, it starts the server with specified port, if client, it tries to connect to the ip)
+--ksmulti-starthost			// start host once the game initializes (on the specified port)
+--ksmulti-startclient		// start client once the game initializes (it tries to connect to the specified ip instantly)
+--ksmulti-startserver		// EXPERIMENTAL // start dedicated server once the game initializes (on the specified port), also sets "AutoContinue" rule to true automatically
+--ksmulti-min-plr-count	[int]	// for AutoContinue rule, it tells dedicated server what is the minimum player count to automatically start the run (does not affect run continue)
 --ksmulti-setrule [rule] [value] // set a game rule before start, in in-game console enter "krok rules" to see them all
 
-EXAMPLE: "CasualtiesUnknown.exe --ksmulti-ip-port 127.0.0.1:25565 --ksmulti-setrule sv_cheats 1 --ksmulti-setrule PLAYER_COUNT_LIMIT 20 --ksmulti-setname MyNameJeff --ksmulti-sethost --ksmulti-startnetwork --ksmulti-immidiate-start"
+DEDICATED SERVER EXAMPLE: 
+"CasualtiesUnknown.exe -screen-fullscreen 0 -screen-height 360 -screen-width 640 --ksmulti-ip-port 127.0.0.1:7790 --ksmulti-setrule AllowJoinWhileInGame 1 --ksmulti-setrule PLAYER_COUNT_LIMIT 64 --ksmulti-setname Krokosha --ksmulti-startserver --ksmulti-verbose --ksmulti-min-plr-count 4 --ksmulti-immidiate-start"
 
-btw, this mod does not support running as headless/dedicated servers because of how the game is built, and the mod (simply not possible)
+
 
 # This mod uses "Unity Netcode for GameObjects" library version 1.7.1   
+
+
 
 
 
@@ -69,6 +73,9 @@ bool AllowClientCheatCommands = false; // allow running all console commands for
 ushort PLAYER_COUNT_LIMIT = 20;  
 bool EnableNametags = true; // Shows names of players under their characters 
 bool DisableNametagsIfUnchipped = true; 
+bool EnableChatbox = true; // In-game chat history is shown.
+bool OnlyProximityChat = false; // if enabled you can only see messages of players in your 64 tile radius.
+bool OnlyProximityChatIfUnchipped = true; // if enabled unchipped players can only see messages of players in 64 tile radius.
 bool UnchippedIsIndividual = true;  // in pre-run settings, everyone can choose on their own to be chipped or no. if this is "false", everyone is same as host
 bool ForNextLayerAllMustReachEnd = true; // player that finishes a layer must wait for everyone else, else , host will get prompted to continue layer even if they are very far behind
 bool CanAccessOthersInventory = false;  // and steal stuff from other inventory even when theyre conscious
@@ -82,5 +89,5 @@ bool FriendlyFire = false;
 bool AllowJoinWhileInGame = false; // potentially unstable but i think it works now 
 float AdditionalHealthRegen = 1.0; // speed up regen for broken bones, dislocations and stuff like that (because the intended way to play this mod is without speeding up time) 
 float AdditionalHealthDecay = 1.0; // speeds up brain damage from lack of oxygen, so that death isnt so slow  
-
+bool AutoContinue = false; // auto-continues the layer depending on the "ForNextLayerAllMustReachEnd" rule,  and in main menu it auto-starts the game after 10 seconds when a first player joined. and auto-exits to main menu if all players disconnected 
 

@@ -62,7 +62,6 @@ Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
 
 
 # How to play:
-Always confirm that you and your friends have the same game version, and the same mod version. (otherwise it all will break)<br>
 Lookup any Minecraft vLAN/LAN/Port-forwarding tutorial, it will work the same.<br>
 (except that my mod doesn't scan your Local Network lol, you need to always input an IP address)<br>
 (and also this mod uses UDP protocol instead of TCP)<br>
@@ -128,18 +127,8 @@ Spectator mode when dead.<br>
 Sleeping is disabled.<br>
 Any dead players respawns at next layer.<br>
 Unchipped option is individual.<br>
-Most of these features can be tweaked in the in-game console.<br>
-The mod is not nearly finished yet!<br>
-More true co-op features are coming soon!<br>
+Most of these features can be tweaked in the in-game console. (type "krok help" to show)<br>
 
-
-# Features for nerds:
-Added MP-specific console commands. (type "krok help" to show)<br>
-This mod uses Unity Netcode as the networking library.<br>
-Complete player and interactions synchronization.<br>
-All in-game POIs and Items are synchronized.<br>
-Simple world synchronization. (tiles and fluids)<br>
-Janky physics synchronization.<br>
 There's no client prediction.<br>
 There's no network ownership.<br>
 There's no deterministic RNG.<br>
@@ -183,9 +172,8 @@ Player health regen and decay is tweaked.
  - Health regeneration is boosted. (tweaked by the "AdditionalHealthRegen" rule )
 
 All these rules can be changed only by the Host by running the command "krok rule [rule name] [new value]"   <br>
-Run "krok rule sv_cheats true" to enable console 'cheat' commands<br>
 
-With friendly fire enabled, other players do a scared face if you aim your gun at them.<br>
+You can eat your friends after they died.
 
 Traders first impression reputation is calculated from the prettiest of the bunch.<br>
 

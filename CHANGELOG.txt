@@ -3,21 +3,75 @@
 
 
 KNOWN ISSUES:
-Save system does not work.
-Extreme lag for clients.
-Extreme lag with larger time scale.
-Optimization doesn't really exist rn, actually.
-Gun jamming might desync
-Worldgen is not synced at all. But my object sync streams the world to the clients pretty accurately.
-Physics sync is wrong outside of hosts view.
-Ragdoll just teleports around i know.
-Sometimes world generation screen on host might freeze for like a minute and idk whyy
-This mod entirely consists of zero-effort schizo code written on a phone, it's a miracle that it works.
+ - Save system does not work.
+ - Extreme lag for clients.
+ - Extreme lag with larger time scale.
+ - Optimization doesn't really exist rn, actually.
+ - Gun jamming might desync
+ - Worldgen is not synced at all. But my object sync streams the world to the clients pretty accurately.
+ - Ragdoll just teleports around i know.
+ - Sometimes world generation screen on host might freeze for like a minute and idk whyy
+ - This mod entirely consists of zero-effort schizo-code written on a phone, it's a miracle that it works.
 
+
+
+
+ --- 5.4.1.10 --- 23.12.2025 --- Major synchronization improvements and also Cannibalism update --- 
+Unchipped hides nametags.
+ - New game rule "DisableNametagsIfUnchipped"
+Colored talker. (Player speech text above their head is now their player color)
+Fixed broken "krok maxplayers [number]" command.
+@c macro now picks the nearest character to your cursor.
+Added a rule to disable chat history.
+ - New game rule "EnableChatbox"
+ - New game rule "OnlyProximityChat"
+ - New game rule "OnlyProximityChatIfUnchipped"
+ - - Unchipped players messages are only visible if they are on your screen.
+ - - If you are chipped, you can't see unchipped players messages in the chat history. (unless they are visible on your screen)
+Added Cannibalism.
+ - Attacking a dead body is allowed even when FriendlyFire is off.
+ - Attacking or shooting a very damaged body part has a chance to amputate.
+ - Every second amputated limb drops yellow flesh.
+ - When player is dead you can dismember their vital body parts like head,
+ - A vital body part drops internal organs.
+Ensured that the syringe minigame actually fucking injects the stuff finally.
+Location ping pointing arrow disappears if too close.
+Added mod version validation during connection.
+Added an error message for when the mod fails to initialize.
+Ping and network mode always shown. (its for me to review video footage more accurately)
+Improved unregistered items handling.
+Stricter IP:PORT format check.
+Added support to connect to a domain instead of an ip.
+Added dedicated server support. See "FOR-NERDS.txt" for hosting info.
+Fixed attacking an animal (spiders) not doing the extended cooldown. 
+Fixed frozen items and buildings outside of hosts view.
+Added game rules configuration menu.
+Synced radioactive objects to actually irradiate clients.
+Fixed phantom irradiated visual effect.
+Fixed opiate state not being reset on client. 
+Fixed being able to open crafting menu while spectating.
+"krok give" command now supports multiple item ids
+Rewrote world chunks sync. Now it efficiently sends relevant chunks to clients, making the inconsistent Worldgen much less noticable.
+Synced cave tick swarms.
+Improved sandvine sync.
+Dead players bodies will stop creating bleed particles after they ran out of blood.
+Made stalagtite/skullcrusher/crate hits client-authoritative.
+Added a player locator to the brightness menu. It shows direction and distance to all players.
+Command "krok tp [player name] @c" now teleports to cursor location.
+Fluid simulation now works outside of hosts view.
+Changed main menu a bit.
+Added "Open Woundview" button to the spectator mode. To view health of spectated player.
+Added "Stop spectating" button to the spectator mode.
+Added "spectate" console cheat command, to spectate even when you're alive.
+Patched combat music trigger distance.
+Unlocked noclip command. (it was officially added in pretest 5)
+Unlocked fullbright command. (it was officially added in pretest 5)
+Slightly nerfed gun friendly fire damage. (idk why but whatever)
+When you sleep it shows list of players that are not sleeping.
 
 
  --- 5.4.1.9 --- 16.11.2025 --- Public release Hotfix --- 
-Added disconnection messages.
+Added disconnection chat messages.
 Fixed bug that caused all players clear inventory when continuing to next layer.
 Host now requires a name. To fix potentially broken chat and allat.
 
