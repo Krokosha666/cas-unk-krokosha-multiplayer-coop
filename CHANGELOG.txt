@@ -14,6 +14,13 @@ KNOWN ISSUES:
  - This mod entirely consists of zero-effort schizo-code written on a phone, it's a miracle that it works.
 
 
+ 
+ --- 5.4.1.11 --- 24.12.2025 --- Object sync improvement --- 
+Increased object load radius.
+Fixed chat not working after playing and going back to main menu.
+Fixed structure backgrounds syncing extremely lazily.
+Hopefully fixed player inventories getting stuck in desync purgatory after a layer transition.
+Hopefully fixed weird issue where caveticks broke all ur bones.
 
 
  --- 5.4.1.10 --- 23.12.2025 --- Major synchronization improvements and also Cannibalism update --- 
