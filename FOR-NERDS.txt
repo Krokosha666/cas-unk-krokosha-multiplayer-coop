@@ -49,7 +49,7 @@ Are added to the "keybinds.json" automatically.
 --ksmulti-setname My_Custom_User_Name  // override username
 --ksmulti-starthost			// start host once the game initializes (on the specified port)
 --ksmulti-startclient		// start client once the game initializes (it tries to connect to the specified ip instantly)
---ksmulti-startserver		// EXPERIMENTAL // start dedicated server once the game initializes (on the specified port), also sets "AutoContinue" rule to true automatically
+--ksmulti-startserver		// start dedicated server once the game initializes (on the specified port), also sets "AutoContinue" rule to true automatically
 --ksmulti-min-plr-count	[int]	// for AutoContinue rule, it tells dedicated server what is the minimum player count to automatically start the run (does not affect run continue)
 --ksmulti-setrule [rule] [value] // set a game rule before start, in in-game console enter "krok rules" to see them all
 
@@ -86,6 +86,8 @@ bool CommunicateWithTheDead = true; // chat is separated from dead if false (for
 bool Permadeath = false; // disable all forms of non-cheat respawn
 bool ReviveOnNextLevel = true; // respawn all dead players after reaching next layer
 bool FriendlyFire = false;
+bool FriendlyFireCombatDismember = true;
+float FriendlyFireAttackerMoodDebuff = 0.5;
 bool AllowJoinWhileInGame = false; // potentially unstable but i think it works now 
 float AdditionalHealthRegen = 1.0; // speed up regen for broken bones, dislocations and stuff like that (because the intended way to play this mod is without speeding up time) 
 float AdditionalHealthDecay = 1.0; // speeds up brain damage from lack of oxygen, so that death isnt so slow  

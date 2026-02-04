@@ -1,5 +1,7 @@
 "Casualties: Unknown" Co-op mod by Krokosha666
+Official link: https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop
 (my abandoned YT channel): https://www.youtube.com/@Krokosha666
+
 
 
 KNOWN ISSUES:
@@ -13,6 +15,23 @@ KNOWN ISSUES:
  - Sometimes world generation screen on host might freeze for like a minute and idk whyy
  - This mod entirely consists of zero-effort schizo-code written on a phone, it's a miracle that it works.
 
+
+ --- 5.4.1.12 --- 04.02.2026 --- Piggyback update --- 
+Added Piggyback/Carrying other players.
+ - You need enough strength to carry other player.
+ - Carrying very heavy load will make you unable to move.
+Added 3 buttons to player interaction menu
+ - "Piggyback" - ride the other player
+ - "Carry" - grab and carry the other player
+ - "Push" - pull a prank and push em off a cliff  ( requires rule "AllowPush" default "true" )
+Fixed host ip being locked to the ip being inputted (127.0.0.1 works again as expected).
+Rule changer gui is unlocked ingame if sv_cheats are on.
+Removed the vignette in spectator.
+Added missing "--ksmulti-startserver" cmd argument.
+Improved lockpicking minigame sync.
+Added rule "FriendlyFireCombatDismember"
+Added rule "FriendlyFireAttackerMoodDebuff"
+Updated BepInEx version to 5.4.23.4
 
  
  --- 5.4.1.11 --- 24.12.2025 --- Object sync improvement --- 

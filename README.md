@@ -8,23 +8,27 @@ Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
 [![Video Title](https://img.youtube.com/vi/dvVuY3R9wV8/0.jpg)](https://www.youtube.com/watch?t=61&v=dvVuY3R9wV8)
 
 # Automatic install:
-1. **danxnader** created an automatic [installer tool](https://github.com/danxnader/ScavKRInstaller) for this mod:
+1. [**danxnader**](https://github.com/danxnader/ScavKRInstaller) created an automatic installer tool for this mod:
     - [Download the ScavKRInstaller.exe](https://github.com/danxnader/ScavKRInstaller/releases/latest/download/ScavKRInstaller.exe)
     - Note: You can not play singleplayer with this version of the game.
 2. Follow the tool's instructions.<br>It should install the correct game version for the latest version of this mod.
 
+
+
 # Manual install:
+<details>
+  <summary>Click to show text guide.</summary>
+
 1. Download the game from:
-    - https://orsonik.itch.io/scav-prototype 
+- https://orsonik.itch.io/scav-prototype 
 
 2. You have to copy the game again if you want to play singleplayer later.
 
 3. Download the mod and unzip the contents into the game root directory.
-    - Click the "Code > Download Zip"
-    - Or here's direct link: https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/archive/refs/heads/main.zip
+    - Click the ["Code > Download Zip"](https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/archive/refs/heads/main.zip)
 
-4. Unzip BepInEx_win_x64_5.4.23.3.zip into the game root directory (where the .exe is located).
-    - Official download: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip
+4. Unzip BepInEx zip into the game root directory (where the .exe is located).
+    - Official download: [BepInEx_win_x64_5.4.23.4.zip](https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_win_x64_5.4.23.4.zip)
 
 5. Go to CasualtiesUnknown/BepInEx/plugins/   (create the plugins folder if its missing)
 6. Copy and paste all dlls from "MultiplayerMod/BepInEx/plugins/" into there.
@@ -57,7 +61,8 @@ Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
     - - Download a random Arial.ttf off of the internet or run `winetricks allfonts`.
 
 9. Continue to "How to play" sections of this README.
- 
+</details>
+<br>
 
 
 
@@ -106,9 +111,7 @@ Install RadminVPN from https://www.radmin-vpn.com/
     
 # Warning:
 If nothing works: It's a skill issue - Don't whine and try again.
- - You can look up online any troubleshooting tutorials for any LAN game, same network issues apply to ALL software in the world.
- - Or better yet, go ask an AI about it. It's pretty good at troubleshooting network issues.
- - Or crying at people in "Casualties: Together" discord server may help you: https://discord.gg/SA6H7mA6De
+ - Or cry at people in "Casualties: Together" discord server: https://discord.gg/SA6H7mA6De
 
 Also, restart the game after disconnect or failed attempt, to reset for sure.
 
@@ -125,6 +128,7 @@ Right click to interact and heal other players.<br>
 Stay close to others to share body temperature.<br>
 Spectator mode when dead.<br>
 Sleeping is disabled.<br>
+Carrying incapacitated players.<br>
 Any dead players respawns at next layer.<br>
 Unchipped option is individual.<br>
 Most of these features can be tweaked in the in-game console. (type "krok help" to show)<br>
