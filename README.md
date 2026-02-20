@@ -3,6 +3,7 @@
 A simple LAN Multiplayer Co-op Mod for Scav Prototype V5 Pretest 4<br>
 Game link: https://orsonik.itch.io/scav-prototype<br>
 Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/krokosha666)
 
 ### Gameplay showcase: 
 [![Video Title](https://img.youtube.com/vi/dvVuY3R9wV8/0.jpg)](https://www.youtube.com/watch?t=61&v=dvVuY3R9wV8)
