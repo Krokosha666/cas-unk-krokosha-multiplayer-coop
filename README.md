@@ -2,7 +2,7 @@
 (my abandoned YT channel): https://www.youtube.com/@Krokosha666<br>
 A simple LAN Multiplayer Co-op Mod for Scav Prototype V5 Pretest 4<br>
 Game link: https://orsonik.itch.io/scav-prototype<br>
-Discord server for discussing this mod: https://discord.gg/SA6H7mA6De
+Discord server for discussing this mod: https://discord.gg/SA6H7mA6De<br>
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/krokosha666)
 
 ### Gameplay showcase: 
@@ -190,6 +190,7 @@ The Host must enter this console command:<br>
 ```krok rule sv_cheats 1```<br>
 and then to allow clients to cheat:<br>
 ```krok rule AllowClientCheatCommands 1```<br>
+
 
 
 
