@@ -20,52 +20,82 @@ Discord server for discussing this mod: https://discord.gg/SA6H7mA6De<br>
 <details>
   <summary>Click to show text guide.</summary>
 
-1. Download the game from:
-- https://orsonik.itch.io/scav-prototype 
+## What you need
 
-2. You have to copy the game again if you want to play singleplayer later.
+1. The game from:
+    - ~~https://orsonik.itch.io/scav-prototype~~ public version is too new.
+    - [ScavKRInstaller's Source](https://github.com/danxnader/ScavKRInstaller/blob/16cda961730556f0eec00ed3e3096f15c3575169/ScavKRInstaller/Constants.cs#L21-L23) has links to the version you'll need.
 
-3. Download the mod and unzip the contents into the game root directory.
-    - Click the ["Code > Download Zip"](https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/archive/refs/heads/main.zip)
+2. The mod from:
+    - [This repo's release page](https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/releases)
 
-4. Unzip BepInEx zip into the game root directory (where the .exe is located).
-    - Official download: [BepInEx_win_x64_5.4.23.4.zip](https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_win_x64_5.4.23.4.zip)
+3. BepInEx, a Unity mod loader, from:
+    - [Their release page, specifically the v5 x64 version](https://github.com/BepInEx/BepInEx/releases), [v5.4.23.4](https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_win_x64_5.4.23.4.zip) is known to work.
+    - **Linux**: Casualties Unknown is a Windows executable, so you will still need the Windows version of BepInEx regardless; don't get the Linux version of BepInEx.
 
-5. Go to CasualtiesUnknown/BepInEx/plugins/   (create the plugins folder if its missing)
-6. Copy and paste all dlls from "MultiplayerMod/BepInEx/plugins/" into there.
+## Putting it together
 
- - **Now your game root folder should look like this:**
- - -  CasualtiesUnknown/
- - - - CasualtiesUnknown.exe
- - - - UnityPlayer.dll
- - - - UnityCrashHandler64.exe
- - - - CasualtiesUnknown_Data/
- - - - MonoBleedingEdge/
- - - - winhttp.dll
- - - - BepInEx/
- - - - - plugins/
- - - - - - KrokoshaCasualtiesMP.dll
- - - - - - Unity.Netcode.Runtime.dll
- - - - - - Unity.Netcode.Components.dll
- - - - - - Unity.Networking.Transport.dll
- - - - - core/
+1. Extract the game somewhere.
 
-7. Try to launch the game by double clicking the CasualtiesUnknown.exe.
-    - LINUX WINE ONLY:
-    - - For Linux Wine you need to enable dll override for winhttp !!
-    - - cmd: `WINEDLLOVERRIDES="winhttp=n,b" wine CasualtiesUnknown.exe` 
-    - - But you should create a Wine profile for it to be permanent.
+2. [Install BepInEx onto the game.](https://docs.bepinex.dev/articles/user_guide/installation/index.html#installing-bepinex-1)
+    - Or tersely, extract the contents of the BepInEx zip next to the game's executable (`CasualtiesUnknown.exe`)
 
-8. In main menu, multiplayer related buttons should appear on top left corner of the screen.
-    - LINUX WINE ONLY:
-    - - If you can't see text you need to install wine fonts.
-    - - Download a random Arial.ttf off of the internet or run `winetricks allfonts`.
+3. Create the path `BepInEx/plugins/cas-unk-mp` within the game directory.
+    - Any name is fine in place of `cas-unk-mp`; it's for organization when [installing mods](https://github.com/05126619z/ChangeSkin).
 
-9. Continue to "How to play" sections of this README.
+4. From the mod zip, extract the contents of `BepInEx/plugin` to `BepInEx/plugins/cas-unknown-mp`
+    - You should have a structure like this:
+```
+CasualtiesUnknown/
+    CasualtiesUnknown.exe
+    UnityPlayer.dll
+    UnityCrashHandler64.exe
+    CasualtiesUnknown_Data/
+    MonoBleedingEdge/
+    winhttp.dll ← From BepInEx
+    BepInEx/
+        core/
+        plugins/cas-unk-mp/
+            KrokoshaCasualtiesMP.dll
+            Unity.Netcode.Runtime.dll
+            Unity.Netcode.Components.dll
+            Unity.Networking.Transport.dll
+```
+
+5. Start the game, dismiss the content warning, and a new dialog in the upper left should appear. Continue to [How to play](#how-to-play).
+    - **Linux**: [Continue reading](#linux)
+
+## Linux
+
+You will need to use Wine or Valve's Proton (thru Steam or Bottles) to run Casualties Unknown. If you use Wine, consider [Bottles](https://usebottles.com/) or at least [Wine Prefixes](https://gitlab.winehq.org/wine/wine/-/wikis/FAQ#wineprefixes) to avoid headaches in the future.
+
+You will also need to allow `winhttp` to be overriden:
+* Bottles:
+    1. Create your Casualties Unknown bottle with the Gaming preset
+    2. Your Casualties Unknown bottle →
+    3. Options ­– Settings
+    4. Compatibility – DLL Overrides
+    5. New Override: `winhttp` then 'Apply'
+    6. Navigate the way back to your bottle
+    7. 'Run Executable' against the executable to play now or 'Add Shortcuts...' for later.
+* Proton:
+    1. [Add a non-Steam game](https://help.steampowered.com/en/faqs/view/4B8B-9697-2338-40EC)
+    2. Right-click the new Casualties Unknown entry
+    3. Properties
+    4. Compatibility
+    5. 'Force the use of a specific Steam Play compatibility tool'
+    6. Select a version of Proton
+    7. Run the game once (to populate the prefix)
+    8. [Follow BepInEx's guide](https://docs.bepinex.dev/articles/advanced/proton_wine.html)
+* Wine Prefix:
+    1. `WINEPREFIX=my-wine-prefix winecfg`
+    2. [Add the override](https://docs.bepinex.dev/articles/advanced/proton_wine.html#2-configure-proxy-to-run)
+    3. `WINEPREFIX=my-wine-prefix CasualtiesUnknown.exe`
+* Wine: `WINEDLLOVERRIDES="winhttp=n,b" wine CasualtiesUnknown.exe`
+
+For vanilla Wine, you might need Arial fonts. Check your distro's repository, `winetricks allfonts`, or find Arial.ttf and install it.
 </details>
 <br>
-
-
 
 # How to play:
 Lookup any Minecraft vLAN/LAN/Port-forwarding tutorial, it will work the same.<br>
