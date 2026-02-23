@@ -170,7 +170,7 @@ When a player dies, they are put into spectator mode.
 To continue to the next layer, all players must reach the end. 
  - Only the Host gets prompted to continue the run.
  - DrillPod works the same, all players must be in the pod to continue.
- - (if rule "ForNextLayerAllMustReachEnd" is false any player can reach the end alone, and drillpods work immidietly)
+ - (if rule "ForNextLayerAllMustReachEnd" is false any player can reach the end alone, and drillpods work immediately)
 
 Player health regen and decay is tweaked.
  - Death is much faster if there are no conscious players nearby. (tweaked by the "AdditionalHealthDecay" rule )
