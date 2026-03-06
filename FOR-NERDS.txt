@@ -3,7 +3,7 @@ Official link: https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop
 (my abandoned YT channel): https://www.youtube.com/@Krokosha666
 buymeacoffee: https://buymeacoffee.com/krokosha666
 
-# Port Forwarding:  
+# Port Forwarding:
 This mod uses UDP protocol.
 Default port: 7790 
 
@@ -12,12 +12,15 @@ This mod adds mutliplayer-exclusive console commands.
 
 Write "help" into the console to see them all.
 
-"mp-rule sv_cheats 1" to enable all commands (server-only)
-"mp-rule AllowClientCheatCommands 1" to enable all commands for clients (none of them are synced, only tp works)
+"rule sv_cheats 1" to enable all commands (server-only)
+"rule AllowClientCheatCommands 1" allows only local client-sided cheat commands, it does enable cheat commands for clients, commands are not synced, you must enter server console for real cheat commands like spawning and such
+"adminpriv-password" to give access to server console to a client who knows the password
+"adminpriv" to give access to server console to a client
+"admin" to enter server console as a client (to use most cheat commands) (takes password if ur not whitelisted)
 "krok maxplayers [number]" (default is 20)
 
-"mp-rules" to see game rules
-"mp-rule [rule name] [value]" is for:
+"currentrules" to see game rules
+"rule [rule name] [value]" is for:
 	- enable permadeath
 	- re-enable changing time speed 
 	- re-enable sleeping 
@@ -59,11 +62,11 @@ Are added to the "keybinds.json" automatically.
 --ksmulti-startclient		// start client once the game initializes (it tries to connect to the specified ip instantly)
 --ksmulti-startserver		// start dedicated server once the game initializes (on the specified port), also sets "AutoContinue" rule to true automatically
 --ksmulti-min-plr-count	[int]	// for AutoContinue rule, it tells dedicated server what is the minimum player count to automatically start the run (does not affect run continue)
---ksmulti-setrule [rule] [value] // set a game rule before start, in in-game console enter "mp-rules" to see them all
+--ksmulti-setrule [rule] [value] // set a game rule before start, in in-game console enter "currentrules" to see them all
 --ksmulti-runcommand		// run a in-game console command in main menu after the game and mp starts // example: "--ksmulti-runcommand setpref_loot_0;log_WASUUUP;log_another_message_idk"
 
 DEDICATED SERVER EXAMPLE: 
-"CasualtiesUnknown.exe -screen-fullscreen 0 -screen-height 360 -screen-width 640 --ksmulti-ip-port 127.0.0.1:7790 --ksmulti-setrule AllowJoinWhileInGame 1 --ksmulti-setrule PLAYER_COUNT_LIMIT 64 --ksmulti-setname Krokosha --ksmulti-runcommand mp-loadcustommusic --ksmulti-startserver --ksmulti-verbose --ksmulti-min-plr-count 16 --ksmulti-immidiate-start"
+"CasualtiesUnknown.exe -screen-fullscreen 0 -screen-height 360 -screen-width 640 --ksmulti-ip-port 127.0.0.1:7790 --ksmulti-setrule AllowJoinWhileInGame 1 --ksmulti-setrule PLAYER_COUNT_LIMIT 64 --ksmulti-setname Krokosha --ksmulti-runcommand loadcustommusic --ksmulti-startserver --ksmulti-verbose --ksmulti-min-plr-count 16 --ksmulti-immidiate-start"
 
 
 
@@ -76,6 +79,5 @@ DEDICATED SERVER EXAMPLE:
 
 
 # All game rules:
- are listed in "mp-rules" console command
-
+ are listed in "currentrules" console command
 

@@ -13,8 +13,49 @@ KNOWN ISSUES:
  - Ragdoll just teleports around.
 
  
- 
- --- 2.0.1 --- 26.02.2026 --- Hotfix --- 
+ --- 2.1.1 --- 06.03.2026 --- Inventory and containers fixes fixing fixed patches --- 
+"Push" player interaction now depends on your strength skill.
+Improved worldgen parameters sync.
+Improved skills sync.
+Improved crafting sync.
+Improved inventory sync.
+Upgraded some UI.
+Fixed late-joined client not recieving layer modifier.
+Fixed client crafted items dropping on the ground when inventory was full.
+Fixed player death not applying mood debuff to witnesses.
+Fixed landmines not being triggered by items when far from players.
+Fixed splints and tourniquets not taking off.
+Fixed liquid crafting not merging it into exising bottles.
+Fixed bug that breaks the entire game if its launched for the first time.
+Fixed mp3player memory leak after music stopped.
+Fixed chat unfocusing itself.
+Patched breaking corpse to apply mood debuff to clients.
+Increased PlayerScatterPunishDistance to 60.
+Slowed down straggler radline.
+Removed Position indicator at top left.
+Adjusted all console commands execution permissions.
+ - Added command "adminpriv-password" - if ur too lazy manually assigning admins every time, tell em the password
+Removed the "mp-" prefixes from all commands cuz they have it in the description.
+Added command "vcbackgroundmusicattenuation" - change how much voicechat attenuates background music.
+Added command "mp3listenervolume" - separately mute mp3players instead of the entire voice chat
+Added command "vclistenervolume"
+Added command "vclistenervolume-individual"
+Added command "printposition"
+Added command "disconnect"
+Added rule "RespawnKeepSkills"
+Added rule "XPGainMultiplier"
+Added rule "FriendlyFireDamageMultiplier"
+Improved Spectator mode:
+ - Added freecam mode.
+ - - Rule "AllowSpectatorFreecam"
+ - Spectator UI is hidden when viewing health panel.
+ - Option to only spectate living players.
+ - Spectator can see moodles of players.
+ - Fixed infinite underwater ambience if died in water.
+New Co-op mechanic:
+ - Stay close to happier players to slow down mood loss. 
+
+ --- 2.0.1 --- 26.02.2026 --- Dedicated server Hotfix --- 
 Fixed dedicated servers not generating any traps.
 Increased nearby item sync batch size.
 Improved item condition sync.
@@ -92,17 +133,16 @@ Added commands:
  - earthquake [now/disable/enable]
  - setpref [string] [value]   - set run settings (like loot rarity, trap amount, and others)
  - say [string]  - send a chat message
- - mp-chatbox-pos [float] [float] [float] [float] [float]  - set location and size of chat box
- - mp-rule [string] [value] - same as "krok rule" but now with autocomplete
- - mp-setplrname [player] [string]
- - mp-setplrcolor [player] [color]
- - mp-connect - Client Connect but through a console comand
- - mp-starthost - Host but through a console comand
- - mp-startserver - Dedicated server start but through a console comand
- - mp-adminpriv - Allow clients to run commands on server and view its log
- - mp-admin - Client: enter the server console if u have the privilege
+ - chatbox-pos [float] [float] [float] [float] [float]  - set location and size of chat box
+ - rule [string] [value] - same as "krok rule" but now with autocomplete
+ - setplrname [player] [string]
+ - setplrcolor [player] [color]
+ - connect - Client Connect but through a console comand
+ - starthost - Host but through a console comand
+ - startserver - Dedicated server start but through a console comand
+ - adminpriv - Allow clients to run commands on server and view its log
+ - admin - Client: enter the server console if u have the privilege
  - theres more i forgor
- // these were previously exclusive to mp mod dev builds
  - hidehud
  - godmode
  - zoom [number]
@@ -136,7 +176,6 @@ Special thanks for participation goes to:
  - Dictator - @snow_5107  - playtester
 
 
- --- 5.5.1.12 --- .02.2026 --- Pretest 5 port --- 
 
  --- 5.4.1.12 --- 04.02.2026 --- Piggyback update --- 
 Added Piggyback/Carrying other players.
