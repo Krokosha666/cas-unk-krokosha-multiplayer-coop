@@ -43,10 +43,10 @@ Discord server for discussing this mod: https://discord.gg/SA6H7mA6De<br>
     - UnityCrashHandler64.exe
     - CasualtiesUnknown_Data/
     - MonoBleedingEdge/
-    - winhttp.dll
+    - winhttp.dll  <-  from BepInEx zip
     - BepInEx/
     - - plugins/
-    - - - KrokoshaCasualtiesMP.dll
+    - - - KrokoshaCasualtiesMP.dll  <-  from mod zip
     - - - Unity.Netcode.Runtime.dll
     - - - Unity.Networking.Transport.dll
     - - - ...and so on
@@ -189,7 +189,7 @@ Player health regen and decay is tweaked.
  - Death is much faster if there are no comrades nearby. ( tweaked by the "AdditionalHealthDecay" rule )
  - Health regeneration is boosted. ( tweaked by the "AdditionalHealthRegen" rule)
 
-All these rules can be changed only by the Host by running the command "mp-rule [rule name] [new value]"<br>
+All these rules can be changed only by the Host by running the command "rule [rule name] [new value]"<br>
 
 You can eat your friends after they died. 
  - The rule "CanAmputateHealthyPlayers" allows you to steal limbs of living players.
@@ -201,10 +201,9 @@ Traders first impression reputation is calculated from the prettiest of the bunc
 # How to enable cheats:
 
 The Host must enter this console command:<br>
-```mp-rule sv_cheats 1```<br>
-and then to allow clients to cheat:<br>
-```mp-rule AllowClientCheatCommands 1```<br>
-**But to run most commands for client they need to do it in server console mode ("mp-admin" privilege)**
+```rule sv_cheats 1```<br>
+**To let Client into server console mode they need "admin" privilege.**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**(Given by "adminpriv [player]" or "adminpriv-password")**
 
 
 

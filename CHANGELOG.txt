@@ -11,8 +11,26 @@ KNOWN ISSUES:
  - Gun jamming might desync
  - Console commands are not synced. (but there is admin mode to run commands on server side)
  - Ragdoll just teleports around.
-
  
+
+ --- 2.1.2 --- 12.03.2026 --- Save patch --- 
+Fixed anti player scatter unfairly engaging while late-joining.
+Fixed some piggyback desyncs for host.
+Fixed crafting in tutorial world.
+Fixed that harmless FreshItemDrop.OnDestroy error.
+Sleeping - Energy timer syncs up with nearby players.
+Patched save system, now it saves other players.
+Patched time scale buttons to disappear when rule disables it.
+Removed logging of Host IP. (release builds only)
+Removed logging of chat. (verbose mode and chatspy re-enables it)
+Added command "mpverbose" -> originally "krok verbose"
+Added command "syncinfo" -> originally "krok syncinfo"
+Added command "syncreset" -> originally "krok objreset"
+Added command "maxplayers" -> originally "krok maxplayers"
+Removed command "krok" cuz all its functionality is now replaced with new commands
+Added command "clearinventory"
+
+
  --- 2.1.1 --- 06.03.2026 --- Inventory and containers fixes fixing fixed patches --- 
 "Push" player interaction now depends on your strength skill.
 Improved worldgen parameters sync.
