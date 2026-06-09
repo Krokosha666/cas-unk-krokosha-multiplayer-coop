@@ -12,8 +12,28 @@ KNOWN ISSUES:
  
 
 	
+	
+ --- 3.1.1 --- 09.06.2026 --- 7.0 Fixes --- 
+- Additions
+	Added connection quality indicator. (opposite of packet loss) (lower than 100% means some packets are lost)
+	Added button to hide password-protected lobbies.
+	Pressing Escape in death screen now opens mp menu.
+- Fixes
+	Fixed campfire not emitting heat.
+	Fixed lifepod heater still emitting cold when disabled.
+	Fixed missing Ban/Kick safety button for direct ip connection mode.
+	Fixed "Starting supplies" run setting.
+	Fixed "Item too far" alert.
+	Fixed wearable already equipped alerts.
+	Fixed suicide no explosion effect.
+	Fixed steam persona names being replaced with host's private nicknames.
+	Fixed run settings and presets not working.
+	Increased server browser lobby count limit to above 50.
+	Increased bug report character limit to 1000.
+	For external mods: Modded console commands don't require sv_cheats now.
 
---- 3.1.0 --- 04.06.2026 --- Sloppy 7.0 port --- 
+
+ --- 3.1.0 --- 04.06.2026 --- Sloppy 7.0 port --- 
 - Additions
     Patched phantom screen shake effect for:
     - Spike stabber
@@ -23,12 +43,14 @@ KNOWN ISSUES:
     - Grappling hook
     Added "Toggle to talk" mode to voicechat.
     Added rule "AlwaysAllowCarry" to allow carrying conscious players. default "false"
+    Discord RPC "Join" button. And Lobby stats.
 - Changes
     Ported to 7.0.1 game version.
     Adjusted some CPR values.
 - Fixes
     Fixed Auto-updater not applying the update.
     Added missing text in CPR minigame.
+    Fixed unicode characters being replaced with "?"
     Fixed bug report send not working if you have unicode username in steam.
 
 
