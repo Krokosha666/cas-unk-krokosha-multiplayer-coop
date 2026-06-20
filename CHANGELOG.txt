@@ -11,8 +11,62 @@ KNOWN ISSUES:
  - Console commands are not synced. (but there is admin mode to run commands on server side)
  
 
+
+
+
+ --- 4.0.0 --- 20.06.2026 --- Krokosha went to get the milk :( --- 
+- Additions
+	Ragdoll sync.
+	Added command "cleanworld" , it deletes all bullet casings.
+	Synced grabber plants.
+	Added "Recruit" button to traders, it can respawn random dead player and gives 3 random items.
+	- Added rule "ReviveFromTrader"
+	Added Trading status icon above players head.
+	Added: ping double click makes it an alert.
+	Added command "cleanworld"  it deletes some visuals and some useless items
+	Added command "servermute [tc/vc] [player]"  
+	Added rule "SavePlayerInventory" - save player inventory when they disconnect 
+	Added rule "SavePlayerPosition" - on player reconnect they are spawned at their last location  
+	Added rule "LayerFinishKeepXOffset"
+	Added rule "SleepingMute"
+	Added rule "LastStandAllowed"
+	Added "Enforce Mod List" server option, to lock players out if they have different set of mods.
+	Added player list and mod list to lobbies.
+	Patched geigefruit sound range.
+	Steam now tracks list of players you recently played with.
+	Chat reuse your previous messages with Up/Down arrow keys.
+	Ban now works for a steam user id even if player is not connected.
+	IP Ban now works for any ip even if player is not connected.
+	Added a setting to disable Discord RPC Join button.
+- Changes
+	Adjusted some CPR values.
+	ReviveOnNextLevel is off by default now
+	Player interaction menu doesn't move anymore, no more misclick incidents.
+	Slowed down brain death from cardiac arrest. And sped up brain regen when well fed.
+	Lobbies with LateJoinSpectate rule enabled will say that u will just spectate.
+	CPR can be performed only by one person at a time.
+	Pushing player cancels their minigame.
+- Fixes
+	Fixed radiation on screen effect not working.
+	Fixed stonefruit phantom unregistered item alert. 
+	Added proper Lobby Creation error handling.
+	Added Steam lobby self-close handler, to restart the lobby when possible. (instead of just kicking u to the main menu, only clients get kicked, blame valve)
+	Full rewrite of object and inventory sync, desyncs should more bearable now.
+	Enemy sync improved.
+	Fixed item tooltip sometimes closing itself every frame.
+	Fixed misaligned sleep menu.
+	Fixed chat messages sometimes cutting off last word.
+	Fixed the "You havent made this before" label stuck forever in craft menu.
+	Fixed shotgun not registering all hits.
+	Unamputation doesn't break the ragdoll anymore.
+
 	
+
+ --- 3.1.2 --- 12.06.2026 --- Crash fix --- 
+Fixed game crashing from unintentional strength xp overflow from attacking.
+
 	
+
  --- 3.1.1 --- 09.06.2026 --- 7.0 Fixes --- 
 - Additions
 	Added connection quality indicator. (opposite of packet loss) (lower than 100% means some packets are lost)
