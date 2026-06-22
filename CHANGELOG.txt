@@ -10,7 +10,29 @@ KNOWN ISSUES:
  - Gun jamming might desync
  - Console commands are not synced. (but there is admin mode to run commands on server side)
  
+ 
 
+ --- 4.0.1 --- 22.06.2026 --- V4 Fixes --- 
+- Additions
+	Added a toggle to hide incompatible lobbies in Server browser.
+	Added server command "createvote" to make a vote to run a custom command.
+	Added a button to copy lobby Id.
+	Server browser search bar now supports raw Steam Lobby Id.
+	Added command "joinlobby"
+	Added command "hostlobby"
+	Added command "getlobbyinfo"
+	Added command "dumplobbysearch"
+	Kick and Ban commands can now specify reason.
+	"addliquid" command now accepts player name.
+- Changes
+	The new brain regen mechanic is half slower now.
+	Server config panel can now be opened while server is running.
+- Fixes
+	World chunk sync optimisations.
+	General sync auto-throttling if server is struggling.
+	Fixed inconsistent sorting in Server browser.
+	Fixed drinking stimulants applying the effect globally.
+	Fixed Steam Kick/Disconnect reason message.
 
 
 
@@ -38,6 +60,7 @@ KNOWN ISSUES:
 	Ban now works for a steam user id even if player is not connected.
 	IP Ban now works for any ip even if player is not connected.
 	Added a setting to disable Discord RPC Join button.
+	Settings are now saved in mp_settings.json instead of registry.
 - Changes
 	Adjusted some CPR values.
 	ReviveOnNextLevel is off by default now
