@@ -6,9 +6,9 @@
 
 <div align="center">
 
-[![Stars](https://img.shields.io/github/stars/Krokosha666/cas-unk-krokosha-multiplayer-coop?style=flat-square&label=Stars&color=orange&logo=github)](https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/releases)
-[![Latest Release](https://img.shields.io/github/v/release/Krokosha666/cas-unk-krokosha-multiplayer-coop?style=flat-square&include_prereleases&logo=github&label=Version)](https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/releases/latest)
-[![Total Downloads](https://img.shields.io/github/downloads/Krokosha666/cas-unk-krokosha-multiplayer-coop/total?style=flat-square&color=blue&logo=github&label=Downloads)](https://github.com/Krokosha666/cas-unk-krokosha-multiplayer-coop/releases)
+[![Stars](https://img.shields.io/github/stars/creaturefeaturelarry/casualties-together?style=flat-square&label=Stars&color=orange&logo=github)](https://github.com/creaturefeaturelarry/casualties-together/releases)
+[![Latest Release](https://img.shields.io/github/v/release/creaturefeaturelarry/casualties-together?style=flat-square&include_prereleases&logo=github&label=Version)](https://github.com/creaturefeaturelarry/casualties-together/releases/latest)
+[![Total Downloads](https://img.shields.io/github/downloads/creaturefeaturelarry/casualties-together/total?style=flat-square&color=blue&logo=github&label=Downloads)](https://github.com/creaturefeaturelarry/casualties-together/releases)
 [![Game Version](https://img.shields.io/badge/Game_Version-v7.0.1-darkgreen?style=flat-square&logo=steam)](https://store.steampowered.com/app/4576510)
 </div>
 
@@ -21,9 +21,6 @@ Credits are listed in "About" menu inside the mod.
 
 [![Casualties: Together](https://img.shields.io/badge/Casualties%3A%20Together%20Mod%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.gg/SA6H7mA6De)   [![Target Planet](https://img.shields.io/badge/Official%20Casualties%3A%20Unknown%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/channels/955738554129063947/1470206122844618802)
 
-
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/krokosha666)
 
 
 
