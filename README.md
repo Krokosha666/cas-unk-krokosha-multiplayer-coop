@@ -32,6 +32,7 @@ Credits are listed in "About" menu inside the mod.
 Download Game: https://store.steampowered.com/app/4576510<br/>
 Download BepInEx: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip<br/>
 Download Co-op Mod: [https://www.nexusmods.com/scavprototype/mods/67](https://www.nexusmods.com/scavprototype/mods/67?tab=files)<br/>
+Alternative Download Co-op Mod: [https://github.com/creaturefeaturelarry/casualties-together/releases](https://github.com/creaturefeaturelarry/casualties-together/releases)
 
 <details><summary>
 
