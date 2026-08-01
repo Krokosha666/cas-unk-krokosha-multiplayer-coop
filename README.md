@@ -22,7 +22,9 @@ Credits are listed in "About" menu inside the mod.
 [![Casualties: Together](https://img.shields.io/badge/Casualties%3A%20Together%20Mod%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.gg/SA6H7mA6De)   [![Target Planet](https://img.shields.io/badge/Official%20Casualties%3A%20Unknown%20Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/channels/955738554129063947/1470206122844618802)
 
 
+## Support developer:
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/casualtiestogether)
 
 
 
@@ -75,7 +77,7 @@ Download Co-op Mod: [https://www.nexusmods.com/scavprototype/mods/67](https://ww
     
 # Warning:
 If it doesn't work: It's a skill issue - Don't whine and try again.
- - Or cry at people in "Casualties: Together" discord server: https://discord.gg/SA6H7mA6De
+ - Or cry at people in "Casualties: Together" discord server: [https://discord.gg/FrBX3srzzG](https://discord.gg/FrBX3srzzG)
 
 Make sure to launch the game through Steam Library. For the Steam Lobbies to work.
 
